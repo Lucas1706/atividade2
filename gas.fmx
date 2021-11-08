@@ -1,0 +1,71 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 470
+  ClientWidth = 330
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = claBlue
+    Size.Width = 330.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    StyledSettings = []
+    Position.X = 64.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 160.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    TextSettings.FontColor = claWhite
+    Text = 'Escolha o pedido'
+    TabOrder = 1
+  end
+  object Button1: TButton
+    Position.X = 250.000000000000000000
+    Position.Y = 2.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 47.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'arrowrighttoolbutton'
+    TabOrder = 2
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Align = Top
+    StyledSettings = [FontColor]
+    Position.Y = 50.000000000000000000
+    Size.Width = 330.000000000000000000
+    Size.Height = 47.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Listar o Produto'
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = Button2Click
+  end
+  object pedido: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 330.000000000000000000
+    Size.Height = 373.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    OnItemClick = pedidoItemClick
+  end
+end
